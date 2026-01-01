@@ -45,56 +45,46 @@ Adam একই সাথে দুটি জিনিস হিসাব কর�
 ## 4. Adam-এর ধাপে ধাপে কাজ (Algorithm Steps)
 
 ধরা যাক:
-- Gradient = \( g_t = \nabla L(w_t) \)
+- Gradient = $ g_t = \nabla L(w_t) $
 
 ---
 
 ### ধাপ–১: First Moment (Momentum) হিসাব
-\[
-m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t
-\]
+$$m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t$$
 
 এটি gradient-এর **moving average**।
 
 ---
 
 ### ধাপ–২: Second Moment (RMSprop) হিসাব
-\[
-v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2
-\]
+$$v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2$$
 
 এটি squared gradient-এর **moving average**।
 
 ---
 
 ## 5. Bias Correction (খুব গুরুত্বপূর্ণ)
-শুরুর দিকে \( m_t \) ও \( v_t \) এর মান ছোট হয় (biased থাকে)।  
+শুরুর দিকে $ m_t $ ও $ v_t $ এর মান ছোট হয় (biased থাকে)।  
 এটা ঠিক করার জন্য **bias correction** করা হয়।
 
 ### Bias-corrected first moment:
-\[
-\hat{m}_t = \frac{m_t}{1 - \beta_1^t}
-\]
+$$\hat{m}_t = \frac{m_t}{1 - \beta_1^t}$$
 
 ### Bias-corrected second moment:
-\[
-\hat{v}_t = \frac{v_t}{1 - \beta_2^t}
-\]
+$$\hat{v}_t = \frac{v_t}{1 - \beta_2^t}$$
 
 ---
 
 ## 6. Final Weight Update Equation
-\[
-w_{t+1} = w_t - \frac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \cdot \hat{m}_t
-\]
+$$w_{t+1} = w_t - \frac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \cdot \hat{m}_t$$
 
 ---
 
 ## 7. Parameter গুলোর ব্যাখ্যা
-- \( \eta \) = learning rate (সাধারণত 0.001)
-- \( \beta_1 \) = momentum decay (সাধারণত 0.9)
-- \( \beta_2 \) = RMSprop decay (সাধারণত 0.999)
-- \( \epsilon \) = numerical stability (যেমন: \(10^{-8}\))
+- $ \eta $ = learning rate (সাধারণত 0.001)
+- $ \beta_1 $ = momentum decay (সাধারণত 0.9)
+- $ \beta_2 $ = RMSprop decay (সাধারণত 0.999)
+- $ \epsilon $ = numerical stability (যেমন: $10^{-8}$)
 
 ---
 
