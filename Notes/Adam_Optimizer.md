@@ -142,3 +142,14 @@ optimizer = tf.keras.optimizers.Adam(
 )
 ```
 
+### PyTorch
+```python
+import torch
+
+optimizer = torch.optim.Adam(
+    model.parameters(),
+    lr=0.001,
+    betas=(0.9, 0.999),
+    eps=1e-8
+)
+```
