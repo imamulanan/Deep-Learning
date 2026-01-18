@@ -62,10 +62,11 @@ $$
 * $y_t$ = আউটপুট
 
 ---
+![RNN architecture 1](../../Images/RNN3.png)
 
-![RNN architecture 1](../../Images/RNN1.png)
+![RNN architecture 2](../../Images/RNN1.png)
 
-![RNN architecture 2](../../Images/RNN2.png)
+![RNN architecture 3](../../Images/RNN2.png)
 
 ---
 
