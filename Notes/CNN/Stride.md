@@ -35,9 +35,9 @@ Filter moves 1 pixel at a time
 Filter moves 2 pixels at a time
 ```
 
-➡️ কম output
-➡️ computation কম
-➡️ কিছু detail বাদ পড়তে পারে
+- ➡️ কম output
+- ➡️ computation কম
+- ➡️ কিছু detail বাদ পড়তে পারে
 
 ---
 
