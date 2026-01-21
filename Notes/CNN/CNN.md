@@ -193,11 +193,11 @@ Output (Class)
 
 ## 6. CNN কেন এত Powerful?
 
-✅ Automatic feature extraction
-✅ Parameter sharing
-✅ Translation invariance
-✅ Less computation
-✅ High accuracy
+- ✅ Automatic feature extraction
+- ✅ Parameter sharing
+- ✅ Translation invariance
+- ✅ Less computation
+- ✅ High accuracy
 
 ---
 
