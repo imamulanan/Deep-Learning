@@ -24,8 +24,8 @@
 Filter moves 1 pixel at a time
 ```
 
-➡️ বেশি output
-➡️ বেশি detail capture
+- ➡️ বেশি output
+- ➡️ বেশি detail capture
 
 ---
 
