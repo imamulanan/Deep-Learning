@@ -5,8 +5,8 @@
 **Pooling** হলো CNN–এর এমন একটি layer
 যার কাজ হলো—
 
-👉 **feature map-এর size ছোট করা**
-👉 **সবচেয়ে important information ধরে রাখা**
+- 👉 **feature map-এর size ছোট করা**
+- 👉 **সবচেয়ে important information ধরে রাখা**
 
 📌 Pooling layer:
 
