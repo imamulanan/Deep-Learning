@@ -240,9 +240,9 @@ Output (Class)
 
 ## 10. CNN-এর Limitations
 
-❌ Training data বেশি লাগে
-❌ Computationally expensive
-❌ Explain করা কঠিন (Black box)
+- ❌ Training data বেশি লাগে
+- ❌ Computationally expensive
+- ❌ Explain করা কঠিন (Black box)
 
 ---
 
